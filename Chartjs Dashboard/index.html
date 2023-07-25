@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script> -->
+<body>
+    <div id="sidebar">
+        <div class="sidebar-brand">
+            <img src="images/mainstack-logo.png" alt="">
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="" class="active"><img src="images/dashboard.png" alt="">Dashboard</a>
+                </li>
+                <li>
+                    <a href=""><img src="images/pen.png" alt="">Item 1</a>
+                </li>
+                <li>
+                    <a href=""><img src="images/users.png" alt="">Item 2</a>
+                </li>
+                <li>
+                    <a href=""><img src="images/wait.png" alt="">Item 3</a>
+                </li>
+            </ul>
+
+            <p>OTHERS 1</p>
+            <ul>
+                <li>
+                    <a href=""><img src="images/camera.png" alt="">Item 4</a>
+                </li>
+                <li>
+                    <a href=""><img src="images/del.png" alt="">Item 5</a>
+                </li>
+            </ul>
+
+            <p>OTHERS 2</p>
+            <ul>
+                <li>
+                    <a href=""><img src="images/subscribe.png" alt="">Item 6</a>
+                </li>
+                <li>
+                    <a href=""><img src="images/file_present.png" alt="">Item 7</a>
+                </li>
+                <li>
+                    <a href=""><img src="images/clock.png" alt="">Item 8</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar-bottom">
+            <img src="images/user.png" alt="" class="user-img">
+            <p>Blessing Daniels</p>
+            <img src="images/more_horiz.png" alt="" class="more-horiz-icon">
+        </div>
+    </div>
+
+    
+    <div class="main">
+        <!-- <header>
+            <h3><i class="fa-solid fa-bars"></i> Dashboard</h3>
+         </header> --> 
+         <!-- <i class="fa-solid fa-bars"></i> -->
+        <main>
+            <div class="mini-nav-bar">
+                <h3>Dashboard</h3> 
+                <i class="fa-solid fa-bars" id="menubar"></i>
+            </div>
+
+                <div class="show-greetings">
+                    <h2 id="greeting"></h2>
+                    <img id="icon" src="" alt="">
+                </div>
+
+                <div class="flex-up">
+                    <p>Check out your dashboard summary.</p>
+                    <span>View analytics</span>
+                </div>
+           
+            <div class="btn-container">
+                <button type="button" class="filter-btn" data-id="1-Day">1 Day</button>
+                <button type="button" class="filter-btn" data-id="3-Days">3 Days</button>
+                <button type="button" class="filter-btn" data-id="7-Days">7 Days</button>
+                <button type="button" class="filter-btn"  data-id="30-Days">30 Days</button>
+                <button type="button" class="filter-btn active" data-id="All-Time">All Time</button>
+                <button type="button" class="filter-btn" data-id="Custom-Date">Custom Date</button>
+            </div>
+
+
+            <div class="line-section">
+                <div class="line-heading">
+                    <h4>Page Views</h4>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <p id="daysChange">All Time</p>
+                <h1>199</h1>
+                <canvas id="line-chart" height="100px"></canvas>
+            </div>
+
+
+            <div class="both-donuts">
+
+                <div class="donut1">
+                    <div class="title">
+                        <p>Top Location</p>
+                        <span>View full reports</span>
+                    </div>
+                    <canvas id="myChart" role="img" style="
+                    box-sizing: border-box; height: 350px; width: 100%;"></canvas>
+                </div>
+                <div class="donut2">
+                    <div class="title">
+                        <p>Top Referral source</p>
+                        <span>View full reports</span>
+                    </div>
+                    <canvas id="myChart2" role="img" style=" 
+                    box-sizing: border-box; height: 350px; width: 100%;"></canvas>
+                </div>
+        
+            </div>
+        </main>
+    </div>
+    
+    
+    
+   
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<script src="main.js"></script>
+
+
+
+
+
+
+</body>
+</html>
